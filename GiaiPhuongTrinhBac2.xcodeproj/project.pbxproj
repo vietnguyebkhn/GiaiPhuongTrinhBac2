@@ -14,6 +14,7 @@
 		A823A109211151D2001365CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A823A107211151D2001365CF /* LaunchScreen.storyboard */; };
 		A823A114211151D2001365CF /* GiaiPhuongTrinhBac2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823A113211151D2001365CF /* GiaiPhuongTrinhBac2Tests.swift */; };
 		A823A11F211151D2001365CF /* GiaiPhuongTrinhBac2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823A11E211151D2001365CF /* GiaiPhuongTrinhBac2UITests.swift */; };
+		A823A12D21116EBD001365CF /* ExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A823A12C21116EBD001365CF /* ExView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A823A11A211151D2001365CF /* GiaiPhuongTrinhBac2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiaiPhuongTrinhBac2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A823A11E211151D2001365CF /* GiaiPhuongTrinhBac2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiaiPhuongTrinhBac2UITests.swift; sourceTree = "<group>"; };
 		A823A120211151D2001365CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A823A12C21116EBD001365CF /* ExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A823A105211151D2001365CF /* Assets.xcassets */,
 				A823A107211151D2001365CF /* LaunchScreen.storyboard */,
 				A823A10A211151D2001365CF /* Info.plist */,
+				A823A12C21116EBD001365CF /* ExView.swift */,
 			);
 			path = GiaiPhuongTrinhBac2;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A823A12D21116EBD001365CF /* ExView.swift in Sources */,
 				A823A101211151CE001365CF /* ViewController.swift in Sources */,
 				A823A0FF211151CE001365CF /* AppDelegate.swift in Sources */,
 			);
@@ -363,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -431,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WA7JZCPK6Y;
 				INFOPLIST_FILE = GiaiPhuongTrinhBac2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WA7JZCPK6Y;
 				INFOPLIST_FILE = GiaiPhuongTrinhBac2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
