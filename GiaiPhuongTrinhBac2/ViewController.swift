@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import ISEmojiView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ISEmojiViewDelegate {
+    func emojiViewDidPressDoneButton(emojiView: ISEmojiView) {
+        
+    }
+    
 
     
+    @IBAction func mTouched(_ sender: UIButton) {
+    }
+     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var mX2Lb: UILabel!
     @IBOutlet weak var mX1Lb: UILabel!
     @IBOutlet weak var mThongBaoLb: UILabel!
@@ -18,10 +26,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var mNhapCText: UITextField!
     @IBOutlet weak var mNhapBText: UITextField!
     @IBOutlet weak var mNhapAText: UITextField!
+    func emojiViewDidSelectEmoji(emojiView: ISEmojiView, emoji: String) {
+        textView.insertText(emoji)
+    }
     
+    func emojiViewDidPressDeleteButton(emojiView: ISEmojiView) {
+        textView.deleteBackward()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        let emojiView = ISEmojiView()
+        emojiView.translatesAutoresizingMaskIntoConstraints = false
+        emojiView.delegate = self
+        textView.inputView = emojiView
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -89,6 +107,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func onKetQuaButtonTouched(_ sender: UIButton) {
+        
         var message = ""
         if mNhapAText.text == "" {
             message = "ban phai nhap so a"
