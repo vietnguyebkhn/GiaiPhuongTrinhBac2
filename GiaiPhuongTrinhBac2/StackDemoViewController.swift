@@ -12,7 +12,7 @@ class StackDemoViewController: UIViewController{
     @IBAction func onComeBack(_ sender: UIButton) {
     }
     @IBOutlet weak var mLabel: UILabel!
-    var  mIsHiden = false
+    var  mIsHiden = true
     @IBAction func onButtonTouched(_ sender: UIButton) {
         
        mIsHiden = !mIsHiden

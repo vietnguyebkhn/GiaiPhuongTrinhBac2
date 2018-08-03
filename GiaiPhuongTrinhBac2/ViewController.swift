@@ -14,7 +14,11 @@ class ViewController: UIViewController, ISEmojiViewDelegate {
         
     }
     
-
+    func setUpNavBar() {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backItem
+    }
     
     @IBAction func mTouched(_ sender: UIButton) {
     }
@@ -35,6 +39,7 @@ class ViewController: UIViewController, ISEmojiViewDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUpNavBar()
         self.hideKeyboardWhenTappedAround()
         let emojiView = ISEmojiView()
         emojiView.translatesAutoresizingMaskIntoConstraints = false
